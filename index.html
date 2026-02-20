@@ -3,75 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    .subfooter {
-        width: fit fit-content;
-        font-size: large;
-        font-weight: 300;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .w {
-        width: auto;
-    }
-    .body {
-        background-color: rgb(red, green, blue);
-        text-align: center;
+    <title>My Portfolio</title>
+    <style>
+        body {
+            background-color: #f4f4f9;
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
 
-    }
-     .body {
-        font-family: 'Times New Roman', Times, serif;
-        font-size: medium;
-        text-align: center;
-        padding: 10%;
-
-
-    }
-    .header {
-        padding: 10%;
-        color:black ;
-    }
-    .body {
-        padding: 10%;
-    }
-    .data {
-        width: fit-content;
-        font-size: large;
-        font-weight: 300;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    .footer {
-        text-align: center;
-        font-size: large;
-        font-weight: 300;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-</style>
-<body>
-    <div id ="header">
-pi       <h1>MY PORPOLIO</h1>
-     </div>
-    <div id ="subheader">
+        .header {
+            margin-bottom: 20px;
+            text-align: center;
+        }
         
+        .header h1 {
+            font-size: 2.5rem;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
 
-     </div>  
-    <div id ="body">
-          <p><strong>Name:</strong> Justin Arge B. Enecillo</p>
-                        <p><strong>Course:</strong> BSCS</p>
-                        <p><strong>Section:</strong> 1A</p>
+        .subheader {
+            width: 100%;
+            max-width: 700px;
+        }
 
-     </div>
-    <div id ="subfooter">
-p
+        .main-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .left-side {
+            background-color: #6f70d8;
+            width: 100%;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .circle-pic img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+        }
+
+        .body {
+            padding: 20px 40px 10px 40px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .body p {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .subfooter {
+            padding: 10px 40px 10px 40px;
+            text-align: left;
+            width: 100%;
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .subfooter strong {
+            color: #333;
+        }
+        
+        .footer {
+            padding: 10px 40px 40px 40px;
+            text-align: left;
+            width: 100%;
+            color: #555;
+            line-height: 1.6;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+        
+        .footer strong {
+            color: #333;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>My Portfolio</h1>
     </div>
-    <div id ="footer">
- p    <p><strong>I'm Justin Arge B. Enecillo living in Dasmariñas City, Cavite. My mission is to work hard
-     towards my goals, embodying integrity and perseverance and self-desipline and priorities meaningful relationships.
-      Embrace my strengths by engaging in 
-      activities that encourage your creativity, such as art, writing, or brainstorming sessions.:</strong></p>
+
+    <div class="subheader">
+        <div class="main-card">
+        
+            <div class="left-side">
+                <div class="circle-pic">
+                    <img src="cvsu picture.jpg" alt="Profile Picture">  
+                </div>  
+            </div>
+
+            <div class="body">
+                <p><strong>Name:</strong> Justin Arge B. Enecillo</p>
+                <p><strong>Course:</strong> BSCS</p>
+                <p><strong>Section:</strong> 1A</p>
+            </div>
+
+            <div class="subfooter">
+                <p><strong>Vision:</strong> My ideal self is to be the best version of myself, constantly growing and learning, and making positive impact on the world around me.</p>
+            </div>
+
+            <div class="footer">
+                <p><strong>Mission:</strong> I'm Justin Arge B. Enecillo living in Dasmariñas City, Cavite. My mission is to work hard towards my goals, embodying integrity, perseverance, and self-discipline, and prioritize meaningful relationships. Embrace my strengths by engaging in activities that encourage my creativity, such as art, writing, or brainstorming sessions.</p>
+            </div>
+
+        </div>
     </div>
 
 </body>
-
 </html>
